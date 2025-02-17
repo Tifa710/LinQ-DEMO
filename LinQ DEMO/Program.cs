@@ -59,7 +59,68 @@ namespace LinQ_DEMO
              */
             #endregion
             #region What is LinQ
+            // stands for => language integrated query
+            // +40 extension methods 
+            // extension methods for built in interface [IEnumerable]
+            // you can use linq operators aginst data [stored in sequance]
+            //List<int> numbers = new List<int>();
+            //{
+            //    1,2,3,4,5,6,7,8,9,10
+            //}
+            //List<int> oddnum = numbers.Where(n => n % 2 == 1).ToList();
+            //var oddnum = numbers.Where(n => n % 2 == 1);
+            //foreach (var item in oddnum)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //for ( int i =0; i< oddnum.Count(); i++ )
+            //{
+            //    Console.WriteLine(oddnum[i]);
+            //}
+            #endregion
+            #region LinQ Syntax
+            //List<int> Numbers = new List<int>() { 1,2,3,4,5,6,7,8,9,10};
+            // fluent syntax
+            // use linq operators as => static method through IEnumerable 
+            //var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1);
+            //foreach (var item in oddnum)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            // use linq operators as => Extension method
+            // OddNum = Numbers.Where(Numbers, N => N % 2 == 1); // most recommended
 
+            // query syntax [ like sql ]
+            /*
+             * select n
+             * for numbers n 
+             * where n %2 ==1
+             */
+            //OddNum = from N in Numbers 
+            //         where N % 2 == 1
+            //         select N;
+            #endregion
+            #region LinQ Execution Ways
+            #region Defared Execution 
+            List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1);
+            Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
+            foreach (var item in oddnum)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+            #region immediate excution
+            // immediate excution [ elemnt , aggregate , casting ]
+            List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1).ToList();
+            // where immediate excution
+            Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
+            foreach (var item in oddnum)
+            {
+                Console.WriteLine(item);
+            } 
+            #endregion
             #endregion
         }
     }
