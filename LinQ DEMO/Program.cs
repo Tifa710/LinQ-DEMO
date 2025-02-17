@@ -102,24 +102,24 @@ namespace LinQ_DEMO
             #endregion
             #region LinQ Execution Ways
             #region Defared Execution 
-            List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1);
-            Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
-            foreach (var item in oddnum)
-            {
-                Console.WriteLine(item);
-            }
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1);
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
+            //foreach (var item in oddnum)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
             #region immediate excution
             // immediate excution [ elemnt , aggregate , casting ]
-            List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1).ToList();
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var OddNum = Enumerable.Where(Numbers, N => N % 2 == 1).ToList();
             // where immediate excution
-            Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
-            foreach (var item in oddnum)
-            {
-                Console.WriteLine(item);
-            } 
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15);
+            //foreach (var item in oddnum)
+            //{
+            //    Console.WriteLine(item);
+            //} 
             #endregion
             #endregion
         }
